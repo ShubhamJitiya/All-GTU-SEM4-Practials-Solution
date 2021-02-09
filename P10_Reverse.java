@@ -1,6 +1,6 @@
 //Practical: 10
 // Reverse 10 Numbers
-//Hi Shubham
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
