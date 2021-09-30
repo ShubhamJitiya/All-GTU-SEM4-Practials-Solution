@@ -17,12 +17,10 @@ public class P9_GCD{
 
     static int GCD(int num1, int num2)
     {
-        if (num2 == 0)
+        if(num2==0){
             return num1;
-        else if(num2>num1)
-            return (GCD(num2, num1));
-        else
-            return (GCD(num2, num1%num2));
+        }
+        return GCD(num2, num1%num2);
     }
 
     public static void main(String[] args) {
