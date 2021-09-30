@@ -17,15 +17,13 @@ public class P7_NumberPlate {
         //Prints Date, Time Practical Number
         DateTime();
 
-        char charA = (char)(65 + (int)(Math.random()*26));
-        char charB = (char)(65 + (int)(Math.random()*26));
-        char charC = (char)(65 + (int)(Math.random()*26));
-        int num = (1000 + (int)(Math.random()*9000));
-
-        System.out.print("Generated Number Plate: ");
-        System.out.print(charA);
-        System.out.print(charB);
-        System.out.print(charC);
-        System.out.print(num);
+        String a = "";
+        for(int i=0; i<3; i++){
+             a = a + (char)((int)(Math.random()*( 'Z' - 'A' + 1)) + 'A');
+        }
+        for(int i=0; i<4; i++){
+             a = a + (char)((int)(Math.random()*( '9' - '0' + 1)) + '0');
+        }
+        System.out.print("Plate Number Generated: "+a +"\n");
     }
 }
