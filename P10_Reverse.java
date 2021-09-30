@@ -42,8 +42,11 @@ public class P10_Reverse{
     //Printing reverse number
     static void printInReverse(){
         System.out.println("Elements after reversing: ");
-        for (int i = 0; i<arr.length;i++)
+//        for (int i = 0; i<arr.length;i++)
+//            System.out.print(arr[i]+", ");
+        for(int i=arr.length-1;i>=0;i--){
             System.out.print(arr[i]+", ");
+        }
     }
 
     public static void main(String[] args) {
@@ -52,7 +55,7 @@ public class P10_Reverse{
 
         System.out.println("Enter 10 integers: ");
         setArr();
-        swap();
+//        swap();
         printInReverse();
     }
 }
