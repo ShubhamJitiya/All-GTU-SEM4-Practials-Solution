@@ -18,6 +18,21 @@ public class P7_NumberPlate {
         DateTime();
 
         String a = "";
+        
+        /*Easy to analyze
+        char charA = (char)(65 + (int)(Math.random()*26));
+        char charB = (char)(65 + (int)(Math.random()*26));
+        char charC = (char)(65 + (int)(Math.random()*26));
+        int num = (1000 + (int)(Math.random()*9000));
+
+        System.out.print("Generated Number Plate: ");
+        System.out.print(charA);
+        System.out.print(charB);
+        System.out.print(charC);
+        System.out.print(num);
+        */
+        
+        //Efficient way
         for(int i=0; i<3; i++){
              a = a + (char)((int)(Math.random()*( 'Z' - 'A' + 1)) + 'A');
         }
