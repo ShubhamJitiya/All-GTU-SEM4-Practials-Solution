@@ -15,12 +15,14 @@ public class P9_GCD{
         System.out.println("------------");
     }
 
-    static int GCD(int num1, int num2)
+    static int GCD(int num1, int num2)  //changed the function from recursive to iterative
     {
-        if(num2==0){
-            return num1;
-        }
-        return GCD(num2, num1%num2);
+        int gcd = 1;
+        for(int i = 1; i <= x && i <= y; i++)  {   
+            if(x%i==0 && y%i==0)  
+            gcd = i;  
+        } 
+        return gcd;
     }
 
     public static void main(String[] args) {
