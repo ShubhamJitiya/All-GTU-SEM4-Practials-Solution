@@ -8,7 +8,7 @@
 //Input- Weight in pounds & Height in Inches.
 // 1 pound=.45359237 Kg and 1 inch=.0254 meters.
 
-package Practicals;
+// package Practicals;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,9 +20,13 @@ class Conversion{
     static double M = 0.0254;
     double weightP, heightIn;
 
+    public double power(double a){
+        return a*a;
+    }
     public void BMI(){
         double BMI;
-        BMI = weightP*KG/Math.pow((heightIn*M), 2);
+        // BMI = weightP*KG/power((heightIn*M), 2);
+        BMI = weightP*KG/power(heightIn*M);
 //        System.out.println(BMI);
 //        System.out.println("Weight in KG: " + weightP*KG);
 //        System.out.println("Height in Meter: " + heightIn*M);
