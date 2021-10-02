@@ -8,7 +8,7 @@
 //Input- Weight in pounds & Height in Inches.
 // 1 pound=.45359237 Kg and 1 inch=.0254 meters.
 
-// package Practicals;
+package Practicals;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
