@@ -30,8 +30,11 @@ class reverse
     //Printing reverse number
     void printInReverse(){
         System.out.println("Elements in reverse pr");
-        for (int i = 0; i<arr.length;i++)
+        // for (int i = 0; i<arr.length;i++)
+        //     System.out.print(arr[i]+", ");
+        for(int i=arr.length-1;i>=0;i--){
             System.out.print(arr[i]+", ");
+        }
     }
 }
 public class P10_Reverse_Number {
@@ -41,7 +44,7 @@ public class P10_Reverse_Number {
         System.out.println("Enter 10 integers: ");
          reverse num = new reverse();
          num.setArr();
-         num.swap(); //Method is invoked to reverse numbers
+        //  num.swap(); //Method is invoked to reverse numbers
          num.printInReverse();
     }
 }
