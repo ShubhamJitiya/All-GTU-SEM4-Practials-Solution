@@ -24,6 +24,15 @@ public class P12 {
                 System.out.println(" ");
             System.out.print(RanNum1.nextInt(50) + ", ");
         }
+        System.out.println();
+        for (int i = 0; i<100; i++)
+        {
+            if(i%10==0)
+                System.out.println(" ");
+            System.out.print(RanNum1.nextInt(50) + ", ");
+        }
+
+
 //        Random RanNum2 = new Random(1000);
 //        System.out.println();
 //            System.out.print((int)(0+Math.random()*3) + " ");
