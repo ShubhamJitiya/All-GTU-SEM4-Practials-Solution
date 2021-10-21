@@ -11,15 +11,15 @@ static void DateTime(){
     }
     static float cramers_Rule_X(float a, float b, float c, float d, float e, float f)
     {   
-        float X;
-        X = (e*d-b*f)/(a*d-b*c);
-        return X;
+//         float X;
+//         X = (e*d-b*f)/(a*d-b*c);
+        return (e*d-b*f)/(a*d-b*c);
     }
     static float cramers_Rule_Y(float a, float b, float c, float d, float e, float f)
     {   
-        float Y;
-        Y = (a*f-e*c)/(a*d-b*c);
-        return Y;
+//         float Y;
+//         Y = (a*f-e*c)/(a*d-b*c);
+        return (a*f-e*c)/(a*d-b*c);
     }
     public static void main(String[] args) {
 

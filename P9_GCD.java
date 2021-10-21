@@ -29,13 +29,18 @@ public class P9_GCD{
 
         //Prints Date, Time Practical Number
         DateTime();
-
-        System.out.println("Enter two Positive Integers to Find GCD");
-
-        //Reading two positive integers
+        
         Scanner scan = new Scanner(System.in);
-        int Num1 = scan.nextInt();
-        int Num2 = scan.nextInt();
+        int Num1;
+        int Num2;
+        
+        // User may give negative number by mistake. So better to check the conditions to avoid undesired output.
+        do{
+            System.out.println("Enter two Positive Integers to Find GCD");
+            //Reading two positive integers
+            Num1 = scan.nextInt();
+            Num2 = scan.nextInt();
+        }while(Num1 <= 0 || Num2 <= 0);
 
         System.out.println("GCD of two number " + Num1 + " and " + Num2 + " is " + GCD(Num1, Num2));
 

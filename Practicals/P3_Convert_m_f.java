@@ -32,6 +32,9 @@ public class P3_Convert_m_f {
 
         System.out.println("Enter meter to convert in feet: ");
         Conversion_1.Meter = scan.nextDouble();
+        
+        scan.close();
+        // It's a good practice to close the resources after you complete using it.
 
         toFeet = Conversion_1.meterToFeet();
         System.out.println(Conversion_1.Meter+" meter = "+ toFeet + " feet");
