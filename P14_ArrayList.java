@@ -84,8 +84,11 @@ public class P14_ArrayList {
 
 //            System.out.println();
 
-            for (int i = 0; i<al_obj.size();i++) {
-                System.out.println(al_obj.get(i));
-            }
+//             for (int i = 0; i<al_obj.size();i++) {
+//                 System.out.println(al_obj.get(i));
+//             }
+        for(Object o : al_obj){
+		        System.out.println(o);
+	    }
     }
 }
