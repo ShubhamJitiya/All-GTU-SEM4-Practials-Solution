@@ -18,8 +18,8 @@ public class P9_GCD{
     static int GCD(int num1, int num2)  //changed the function from recursive to iterative
     {
         int gcd = 1;
-        for(int i = 1; i <= x && i <= y; i++)  {   
-            if(x%i==0 && y%i==0)  
+        for(int i = 1; i <= num1 && i <= num2; i++)  {   
+            if(num1%i==0 && num2%i==0)  
             gcd = i;  
         } 
         return gcd;
